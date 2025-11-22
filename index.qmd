@@ -1,0 +1,30 @@
+---
+title: "Xianwei Li"
+format:
+  html:
+    page-layout: full
+about:
+  template: solana
+  image: assets/img/xianweili.JPG
+  image-width: 30em
+  image-shape: rectangle
+---
+
+<div style="color: #39507d; font-size: 1.25em">
+<a href="https://github.com/XianweiLi33">
+<i class="bi bi-github"></i></a> 
+<a href="https://scholar.google.ca/citations?user=axUy9oAAAAAJ&hl=en">
+<i class="ai ai-google-scholar"></i></a> 
+<a href="https://www.linkedin.com/in/xianwei-li-753770174/">
+<i class="bi bi-linkedin"></i></a> 
+<a href="https://orcid.org/0009-0000-0919-7020">
+<i class="ai ai-orcid"></i></a> 
+</div>
+
+Hi, I'm **Xianwei Li** - welcome to my page!  
+I recently completed my **PhD in Statistics (Biostatistics)** at the **University of Waterloo**.
+
+My doctoral supervisors were **[Prof. Richard J. Cook](https://www.math.uwaterloo.ca/~rjcook/)** and **[Prof. Liqun Diao](http://liqundiao.com/)**.
+
+My research focuses on **variable selection** and **prediction for multistate processes**, with applications in biomedical studies.
+

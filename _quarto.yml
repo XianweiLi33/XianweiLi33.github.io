@@ -1,0 +1,43 @@
+project:
+  type: website
+
+website:
+  title: "Xianwei Li"
+  search: false
+  image: assets/img/xianweili.JPG
+  navbar:
+    logo: assets/img/home.jpg
+    search: false
+    logo-alt: "XL"
+    title: false
+    background: light
+    collapse: true
+    collapse-below: md
+    right:
+      - href: research/index.qmd
+        text: RESEARCH
+      - href: teaching/index.qmd
+        text: "TEACHING & MENTORING"
+      - href: activities/index.qmd
+        text: "ACTIVITIES"
+      - href: other/index.qmd
+        text: ABOUT
+
+  page-footer:
+    border: false
+    right: "© 2025 Xianwei Li"
+    center: |
+      <a href="https://github.com/XianweiLi33"><i class="bi bi-github"></i></a>
+      <a href="https://scholar.google.ca/citations?user=axUy9oAAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/xianwei-li-753770174/"><i class="bi bi-linkedin"></i></a>
+      <a href="https://orcid.org/0009-0000-0919-7020"><i class="ai ai-orcid"></i></a>
+
+format:
+  html:
+    theme:
+      - cosmo
+    css: assets/styles.css
+    # remove next line if assets/header.html doesn't exist
+    include-in-header: assets/header.html
+
+editor: source

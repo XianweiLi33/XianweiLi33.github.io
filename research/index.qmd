@@ -1,0 +1,102 @@
+---
+title: "Research"
+---
+
+My research focuses on **variable selection** and **prediction with multistate processes** under 
+**complex observation schemes**. Applications includes identifying key risk factors 
+from a large number of candidate variables.
+
+My work includes both **methodological contributions**, where I develop statistical tools for 
+multistate and survival data, and **applied collaborations** with clinician scientists to support 
+clinical research. Feel free to check out my work on [Google Scholar](https://scholar.google.ca/citations?user=axUy9oAAAAAJ&hl=en).
+
+
+## Recent papers and preprints
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(bib2df)
+library(dplyr)
+df <- bib2df(here::here("_biblio", "papers.bib"), separate_names = TRUE)
+
+keep_fields <- toupper(c(
+  "category", "author", "booktitle", "edition",
+  "editor", "howpublished", "institution", 
+  "journal", "pages", "publisher", "number",
+  "title", "volume", "year", "arxiv", "url",
+  "code", "pdf"))
+df <- df[, keep_fields]
+
+# df <- df[, keep_fields] |> arrange(desc(YEAR))
+source(here::here("_rcode", "render-pubs.R"))
+
+df2 <- df |>
+  transmute(
+    year = clean_str(YEAR),
+    title = fmt_title(TITLE),
+    pub = fmt_jvpy(CATEGORY, JOURNAL, BOOKTITLE, VOLUME, PAGES, year),
+    links = fmt_links(URL, ARXIV, PDF, CODE),
+    skip = is.na(URL) & is.na(ARXIV) & is.na(PDF) & is.na(CODE)
+  )
+
+bold_me <- function(x) {
+  # Bold "Li, X" and "Li, X."
+  x <- gsub("\\bLi, X\\b", "**Li, X**", x)
+  x <- gsub("\\bLi, X\\.\\b", "**Li, X.**", x)
+  x
+}
+
+df2$authors <- sapply(df$AUTHOR, function(a) bold_me(fmt_names(a)))
+# df2$authors = sapply(df$AUTHOR, fmt_names)
+
+df2 <- df2 |> filter(!skip)
+```
+
+```{r, error=FALSE, warning=FALSE, results="asis", echo=FALSE}
+for (i in 1:nrow(df2)) {
+  ref = df2[i,]
+  if (ref$skip) next
+  cat(ref$title, "\n")
+  cat(ref$authors, "\n")
+  cat(ref$pub, "\n")
+  cat(ref$links, "\n")
+}
+```
+
+<!-- <br> -->
+
+<!-- <a href="all-pubs.qmd" class="btn btn-outline-warning"> -->
+<!-- View all publications -->
+<!-- </a> -->
+
+
+<!-- ## Slides for recent talks -->
+
+<!-- ```{r echo=FALSE} -->
+<!-- library(tibble) -->
+<!-- library(stringr) -->
+<!-- talks <- tribble( -->
+<!--   ~ title, ~ ref, -->
+<!--   "Nonparametric estimation of time-varying reproduction numbers", "https://dajmcdon.github.io/rtestim-2025/", -->
+<!--   "Introduction to epidemiological forecasting", "https://dajmcdon.github.io/vanml-epifcast/", -->
+<!--   "{epiprocess} and {epipredict}: R packages for signal processing and forecasting", "https://dajmcdon.github.io/cdc-tooling-packages/", -->
+<!--   "Advice on applying to graduate school", "https://dajmcdon.github.io/grad-school-pointers/", -->
+<!--   "Markov switching state space models for uncovering musical interpretation", "https://dajmcdon.github.io/hmms-chopin-2025/", -->
+<!--   "Your model is beautiful, but does it predict?", "https://dajmcdon.github.io/dsges/", -->
+<!--   "Statistical approaches to epidemic forecasting: Evaluation and software", "https://dajmcdon.github.io/epi-modelling-calgary-2023/", -->
+<!--   "Trend filtering in exponential families", "docs/talks/ExpFam-research-169.pdf", -->
+<!--   "Algorithms for Estimating Trends in Global Temperature Volatility", "docs/talks/volatilityAAAIposter.pdf", -->
+<!--   "Regularization, optimization, and approximation: The benefits of a convex combination", "docs/talks/RegOptApprox.pdf", -->
+<!--   "Matrix sketching for alternating direction method of multipliers optimization", "docs/talks/ApproxADMM.pdf", -->
+<!--   "Predicting phenotypes from microarrays using amplified, initially marginal, eigenvector regression", "docs/talks/aimer.pdf" -->
+<!-- ) -->
+<!-- ``` -->
+
+<!-- # ```{r, error=FALSE, warning=FALSE, results="asis", echo=FALSE} -->
+<!-- # for (i in seq_len(nrow(talks))) { -->
+<!-- #   title <- talks$title[i] -->
+<!-- #   ref <- talks$ref[i] -->
+<!-- #   m1 <- str_glue("* <a href='{ref}' target='_blank'>{title}</a> <i class='bi bi-box-arrow-up-right'></i>\n\n") -->
+<!-- #   #m2 <- str_glue("<a href={ref}><button type='button' class='btn btn-outline-primary btn-sm'><i class='bi bi-easel2-fill'></i> slides </button></a>") -->
+<!-- #   cat(m1, "\n\n") -->
+<!-- # } -->
+<!-- # ``` -->
