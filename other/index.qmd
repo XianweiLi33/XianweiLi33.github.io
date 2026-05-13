@@ -8,8 +8,27 @@ This website is **adapted** from the Quarto template developed by **[Prof. Danie
 
 I would also like to thank my friend **[Laura Bumbulis](https://lbumbulis.github.io/)** for recommending these excellent resources to me.
 
-## News
-My non-academic website is under construction - stay tuned for updates!
+## Interests
+
+### Coaching
+I’m interested in both personal and group coaching. I'm energized by helping people truly see themselves and fully express their potential. I’m also a natural systems thinker: I take time to gather information, build connections, and form an internal structure. It’s natural for me to view things through a global perspective. I aim to be a caring team coach who supports organizational growth.
+
+### Music
+Music has been such an important part of my life. It has a magical healing quality that helps me slip effortlessly into the here and now with a pure and simple joy. Nothing else has ever given me this feeling so easily.
+
+I’ve been playing the violin since I was 6. I stopped when I was 18 as I grew tired of playing solo pieces (and the violin can be very LOUD). I tried the guitar instead because it let me play while singing along. Technically, you can do the same with the violin, but imagine how awkward it is when your chin has to hold the instrument.
+
+Guitar is great for accompanying myself, but I wondered if there were other ways to do it too. Yes, and here's what came next. I always kept my strong interest, curiosity, and sense of awe for the piano since I was a kid, and when the opportunity came, I finally started learning it at 24. It just felt like a wish I have carried for years finally come true! Recently, I picked up my violin again, and I still play the piano casually quite often.
+
+Here is a recent performance from the **Orchestra @ University of Waterloo: the All-Beethoven Winter 2025 End-of-Term Concert**, where I served in the second violin section.
+
+<iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/sOPIAU2XxBo" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+</iframe>
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.align='left', fig.width=12, fig.height=1.2}
 #| fig-cap: ""

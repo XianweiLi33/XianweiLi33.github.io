@@ -1,5 +1,5 @@
 ---
-title: "Xianwei Li"
+title: "Xianwei Li (李弦薇)"
 format:
   html:
     page-layout: full
@@ -21,10 +21,12 @@ about:
 <i class="ai ai-orcid"></i></a> 
 </div>
 
-Hi, I'm **Xianwei Li** - welcome to my page!  
-I recently completed my **PhD in Statistics (Biostatistics)** at the **University of Waterloo**.
+Hi, I'm **Xianwei Li**[^name] - welcome to my page!  
+I recently completed my **PhD in Statistics (Biostatistics)** at the **University of Waterloo**. I currently work as a Manager in Risk Model Development at Royal Bank of Canada, where I develop multistate models to predict clients’ risk of default.
 
 My doctoral supervisors were **[Prof. Richard J. Cook](https://www.math.uwaterloo.ca/~rjcook/)** and **[Prof. Liqun Diao](http://liqundiao.com/)**.
 
 My research focuses on **variable selection** and **prediction for multistate processes**, with applications in biomedical studies.
 
+
+[^name]: My given name comes from a Taoist term referring to "the subtle and profound mysteries of the universe." My parents later adapted the characters to make it more poetic and now it carries the meanings of musical strings and a small graceful flower, symbolizing harmony and gentleness.

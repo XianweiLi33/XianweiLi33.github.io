@@ -1,1 +1,26 @@
 /* css styles */
+/* Ensure Chinese characters render properly */
+/* Add Chinese fallback fonts without changing English font */
+/*body {
+  font-family: inherit, "Songti SC", "Noto Sans SC", "Source Han Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit, "Songti SC", "Noto Sans SC", "Source Han Sans", sans-serif;
+}*/
+
+
+
+/* Ensure Chinese characters render properly */
+body {
+  font-size: 1.05rem;   /* default = 1rem; increase slightly */
+}
+
+body, html {
+  font-family: "Noto Sans SC", "Songti SC", "Source Han Sans", "Arial Unicode MS", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans SC", "Songti SC", "Source Han Sans", sans-serif;
+}
+
