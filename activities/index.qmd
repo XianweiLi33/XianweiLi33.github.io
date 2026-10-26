@@ -2,7 +2,7 @@
 title: "Activities"
 ---
 
-## Presentations and Talks
+## Talks & Presentations
 
 - **Variable Selection and Prediction for Illness–Death Processes under Intermittent Observation**  
   *2024 SSC Annual Meeting*, St. John’s, Newfoundland, Canada - **June 4, 2024**
@@ -13,10 +13,13 @@ title: "Activities"
 - **Variable Selection for Multistate Models under Interval Censoring**  
   *Waterloo SAS Research Presentation Day*, Waterloo, Ontario - **March 11, 2022**
 
-
-## Professional Activities
+## Professional Service
 
 ### Statistical Journal Reviewer
 - *Statistics in Medicine* - **September 2024**  
 - *Canadian Journal of Statistics* - **February 2025**
 
+## Outreach & Industry Engagement
+
+- **University of Waterloo Information Session** - Represented the Credit Risk Modeling Team, **March 2026**
+- **Xplore RBC–University of Waterloo** - Represented Technology & Operations (T&O), **September 2026**

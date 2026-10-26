@@ -14,6 +14,8 @@ website:
     collapse: true
     collapse-below: md
     right:
+      - href: news/index.qmd
+        text: NEWS
       - href: research/index.qmd
         text: RESEARCH
       - href: teaching/index.qmd

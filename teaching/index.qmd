@@ -2,7 +2,7 @@
 title: Teaching & Mentorship
 ---
 
-## Lecturing
+## Teaching
 
 **Department of Statistics and Actuarial Science, University of Waterloo**
 
@@ -10,7 +10,7 @@ title: Teaching & Mentorship
 - Led tutorials and provided support for courses in statistics courses
 
 
-## Mentoring
+## Student Mentorship
 
 ### Mentor, Directed Reading Program (DRP), University of Waterloo  
 **Jan 2024 – Apr 2025**
@@ -30,7 +30,7 @@ Learn more about
 
 <!-- ![](/assets/img/drp){width="80%"} -->
 
----
+## Academic & Community Leadership
 
 ### Graduate Student Representative, Women in Mathematics Committee
 
